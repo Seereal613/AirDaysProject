@@ -7,7 +7,7 @@ public interface ProductService {
 
 	public void register(ProductDTO vo) throws Exception;
 	
-	public ProductDTO read(int pno) throws Exception;
+	public ProductDTO read(String productNum) throws Exception;
 
 	public void modify(ProductDTO vo) throws Exception;
 

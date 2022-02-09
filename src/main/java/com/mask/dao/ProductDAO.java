@@ -7,7 +7,7 @@ import com.mask.dto.ProductDTO;
 public interface ProductDAO {
 	public void create(ProductDTO vo) throws Exception;
 	
-	public ProductDTO read(int pno) throws Exception;
+	public ProductDTO read(String productNum) throws Exception;
 
 	public void update(ProductDTO vo) throws Exception;
 

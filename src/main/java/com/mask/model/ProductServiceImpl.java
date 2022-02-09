@@ -24,9 +24,9 @@ public class ProductServiceImpl implements ProductService{
 	}
 
 	@Override
-	public ProductDTO read(int pno) throws Exception {
+	public ProductDTO read(String productNum) throws Exception {
 		ProductDAO dao=sqlSession.getMapper(ProductDAO.class);
-		return dao.read(pno);
+		return dao.read(productNum);
 	}
 
 	@Override

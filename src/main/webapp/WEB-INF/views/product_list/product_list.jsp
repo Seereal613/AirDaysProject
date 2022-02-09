@@ -9,7 +9,7 @@
 <meta charset="UTF-8">
 <title>제품 리스트</title>
 <link rel="stylesheet" type="text/css"
-	href="/ex/resources/css/product_list_Css.css">
+	href="/ex/resources/css/product_list.css">
 </head>
 <body>
 
@@ -25,7 +25,7 @@
 					<c:forEach items="${list}" var="ProductDTO">
 						<li>
 							<div class="product-box">
-								<a href="/ex/product_info/product_detale"> <img
+								<a href="/ex/product_info/product_detale?productNum=${ProductDTO.productNum}"> <img
 									src="../resources/img/${ProductDTO.productImage}">
 								</a>
 								<ul class="item_info_area">
