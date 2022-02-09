@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    color:black;
+}
+body, th, td, input, select, textarea, button, pre {
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #24282d;
+    font-family: 'Roboto', 'Notokr Local','Noto Sans KR','Malgun Gothic',sans-serif;
+}
+input[type=text], input[type=password], input[type=email], input[type=tel], input[type=number] {
+    box-sizing: border-box;
+    padding: 0 9px;
+    width: 180px;
+    height: 32px;
+    font-size: 13px;
+    line-height: 32px;
+    color: #333;
+    border: 1px #ccc solid;
+    border-radius: 2px;
+}
+.container{
+    max-height: 1024px;
+}
+.util_wrap{
+    height: 70px;
+    text-align: right;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+.layout_body, .header_gnb,.header_login{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left:40px;
+    padding-right: 40px;
+}
+.header_login ul{
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+}
+.header_login ul li{
+  display:inline-block;
+    
+}
+.header_login ul li a {
+    display: block;
+    font: bold 14px 'arial';
+    color:#999;
+    margin: 0px 5px;
+    letter-spacing: 1px;
+}
+.header
+ {
+    height: 200px;
+    text-align: center;
+    box-sizing : border-box;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+.header_logoc{
+    font: bold 40px 'arial';
+    padding-top: 15px;
+    letter-spacing: 2px;
+    margin-top: -1px;
+}
+.header_logo{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left:40px;
+    padding-right: 40px;
+}
+.header_logo h1{
+    font: bold 40px 'arial';
+    padding-top: 23px;
+    letter-spacing:2px;
+}
+.header_util{
+    height: 100px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.header_gnb ul{
+    float:left;
+    margin-top:63px;
+}
+.header_gnb ul li {
+    display: inline-block;
+}
+.header_gnb ul li a {
+    display: block;
+    font: bold 14px 'arial';
+    color:#999;
+    margin: 0px 10px;
+    letter-spacing: 1px;
+}
+
+.product_view{
+    position: relative;
+    top:100px;
+}

@@ -1,0 +1,26 @@
+.product_list { 
+    width: 1200px;
+    height: 600px;
+    background-color: lightpink;
+    margin: 0 auto;
+  }
+  
+  .product_list > .product-box {
+    width: 20%;
+    height:350px;
+    background : black;
+    padding: 20px ;
+    box-sizing: border-box ;
+    
+  }
+  
+  .product_list > .product-box > .img-box > img {
+    width: 100%; 
+  }
+  
+  .product_list > .product-box > .txt-box{
+    color: white;
+    text-align: center ;
+    margin-top: 10px ;
+  }
+  

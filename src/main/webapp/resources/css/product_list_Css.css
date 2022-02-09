@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+}
+
+#wrap{
+    display: inline-block;
+}
+
+/* 네비---------------------------------------------------- */
+
+.navbar {
+overflow: hidden;
+background-color: white;
+}
+
+.navbar a {
+float: left;
+font-size: 16px;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+.dropdown .dropbtn {
+font-size: 16px;  
+border: none;
+outline: none;
+color: black;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+background-color: red;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 100px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 12px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.category_title{
+    padding-top: 14px;
+    padding-bottom: 67px;
+}
+
+
+.category_title .title {
+    display: block;
+    font-size: 32px;
+    color: black;
+    font-weight: 900;
+    text-align: center;
+}
+
+/* 네비---------------------------------------------------- */
+
+.goods_list > .product-box > a{
+    color: black;
+    text-decoration: none;
+    border: none;
+    outline: none;
+
+}
+
+.goods_list > .product-box > .img-box{
+    width: 430px;
+    height: 360px;
+}
+
+.num{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.goods_list>ul>li {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 25%;
+    vertical-align: top;
+    padding: 12px;
+}
+
+#product_info{
+    width: 1024px;
+}
+
+.goods_list img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
