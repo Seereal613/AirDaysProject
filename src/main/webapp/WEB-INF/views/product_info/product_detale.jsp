@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page session="false" %>
-<%@include file="../include/header.jsp"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +9,7 @@
 <title>제품 상세 보기</title>
 <link rel="stylesheet" type="text/css" href="/ex/resources/css/product_detale.css">
 </head>
+<%@include file="../include/header.jsp"%>
 <body>
 
 <div class="middle" style="height: 600px;" >
@@ -77,5 +78,5 @@
 
 
 </body>
-</html>
 <%@include file="../include/footer.jsp"%>
+</html>

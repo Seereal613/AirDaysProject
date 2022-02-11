@@ -187,8 +187,8 @@
 				<ul>
 					<li><a href="/ex/login/login"><span>로그인</span></a></li>
 					<!-- <li><a href="#"><span>Logout</span></a></li> -->
-					<li><a href="/ex/join/Join"><span>회원가입</span></a></li>
-					<li class="last"><a href="/ex/post/post"><span>장바구니</span></a></li>
+					<li><a href="/ex/join/joinform"><span>회원가입</span></a></li>
+					<li class="last"><a href="/ex/zboard/airtop"><span>장바구니</span></a></li>
 					<li class="searchBtn"><a href="#"><img src="/ex/resources/images/btn/btn_top_search.jpg" alt="검색" /></a></li>
 				</ul>
 			</div>
@@ -229,7 +229,7 @@
 	<!-- //slide quick menu -->
 
 	<div id="logo">
-		<h1><a href="#"><img src="/ex/resources/images/img/img_top_logo.jpg" alt="AIRDAYS" /></a></h1>
+		<h1><a href="/ex/main"><img src="/ex/resources/images/img/img_top_logo.jpg" alt="AIRDAYS" /></a></h1>
 	</div>
 	
 	<div id="navigation">
