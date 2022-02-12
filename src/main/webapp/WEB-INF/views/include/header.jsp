@@ -19,7 +19,7 @@
 <meta property="og:description"     content="airdays"/>
 
 <link rel="stylesheet" type="text/css" href="/ex/resources/css/reset.css" />
-<link rel="stylesheet" type="text/css" href="/ex/resources/css/main.css" />
+<link rel="stylesheet" type="text/css" href="/ex/resources/css/main.css?ver=1" />
 <link rel="stylesheet" type="text/css" href="/ex/resources/css/content.css" />
 <link rel="stylesheet" type="text/css" href="/ex/resources/css/mainslide.css" />
 <!-- <link rel="stylesheet" type="text/ex/resources/css" href="../ex/resources/css/customer.css" /> -->
@@ -241,7 +241,7 @@
 		</div>
 		<div id="gnb">
 			<ul id="topMenu">
-				<li class="dep"><a href="javascript:;" id="topNavi1"><span>전체상품</span></a>
+				<li class="dep"><a href="/ex/product_list/product_list" id="topNavi1"><span>전체상품</span></a>
 					<div id="topSubm1">
 						
 						<span class="bigTit">
@@ -250,17 +250,17 @@
 						</span>
 
 						<ul>
-							<li><a href="#">신제품</a></li>
+							<li><a href="/ex/product_list/product_list">신제품</a></li>
 							<li><a href="/ex/product_list/product_list">전체상품</a></li>
 						</ul>
 
-						<span class="promotion">
+						<span class="promotion">	
 							<a href="#"><img src="/ex/resources/images/img/img_ex_gnb_7.jpg" alt="" /></a>
 							<a href="#"><img src="/ex/resources/images/img/img_ex_gnb_12.jpg" alt="" /></a>
 						</span>
 					</div>
 				</li>
-				<li class="dep"><a href="javascript:;" id="topNavi2"><span>신제품</span></a>
+				<li class="dep"><a href="/ex/product_list/product_list" id="topNavi2"><span>신제품</span></a>
 					<div id="topSubm2">
 						<span class="bigTit">
 							<p>신제품</p>
@@ -268,9 +268,9 @@
 						</span>
 
 						<ul>
-							<li><a href="#">소형</a></li>
-							<li><a href="#">중형</a></li>
-							<li><a href="#">대형</a></li>
+							<li><a href="/ex/product_list/product_list">소형</a></li>
+							<li><a href="/ex/product_list/product_list">중형</a></li>
+							<li><a href="/ex/product_list/product_list">대형</a></li>
 							
 						</ul>
 
@@ -280,7 +280,7 @@
 						</span>
 					</div>
 				</li>
-				<li class="dep"><a href="javascript:;" id="topNavi3"><span>베스트</span></a>
+				<li class="dep"><a href="/ex/product_list/product_list" id="topNavi3"><span>베스트</span></a>
 					<div id="topSubm3">
 						<span class="bigTit">
 							<p>베스트</p>
@@ -288,9 +288,9 @@
 						</span>
 
 						<ul>
-							<li><a href="#">소형</a></li>
-							<li><a href="#">중형</a></li>
-							<li><a href="#">대형</a></li>
+							<li><a href="/ex/product_list/product_list">소형</a></li>
+							<li><a href="/ex/product_list/product_list">중형</a></li>
+							<li><a href="/ex/product_list/product_list">대형</a></li>
 						</ul>
 
 						<span class="promotion">
@@ -299,7 +299,7 @@
 						</span>
 					</div>
 				</li>
-				<li class="dep"><a href="javascript:;" id="topNavi4"><span>KF-94</span></a>
+				<li class="dep"><a href="/ex/product_list/product_list" id="topNavi4"><span>KF-94</span></a>
 					<div id="topSubm4">
 						<span class="bigTit">
 							<p>KF-94</p>
@@ -307,11 +307,11 @@
 						</span>
 
 						<ul>
-							<li><a href="#">소형</a></li>
-							<li><a href="#">중형</a></li>
-							<li><a href="#">대형</a></li>
-                            <li><a href="#">와이드</a></li>
-                            <li><a href="#">더뉴플러스</a></li>
+							<li><a href="/ex/product_list/product_list">소형</a></li>
+							<li><a href="/ex/product_list/product_list">중형</a></li>
+							<li><a href="/ex/product_list/product_list">대형</a></li>
+                            <li><a href="/ex/product_list/product_list">와이드</a></li>
+                            <li><a href="/ex/product_list/product_list">더뉴플러스</a></li>
 						</ul>
 
 						<span class="promotion">
@@ -320,7 +320,7 @@
 						</span>
 					</div>
 				</li>
-				<li class="dep"><a href="#" id="topNavi5"><span>KF-94 슬림핏</span></a>
+				<li class="dep"><a href="/ex/product_list/product_list" id="topNavi5"><span>KF-94 슬림핏</span></a>
 					<div id="topSubm5">
 						<span class="bigTit">
 							<p>KF-94 슬림핏</p>
@@ -328,9 +328,9 @@
 						</span>
 
 						<ul>
-							<li><a href="#">소형</a></li>
-							<li><a href="#">중형</a></li>
-							<li><a href="#">대형</a></li>
+							<li><a href="/ex/product_list/product_list">소형</a></li>
+							<li><a href="/ex/product_list/product_list">중형</a></li>
+							<li><a href="/ex/product_list/product_list">대형</a></li>
 						</ul>
 
 						<span class="promotion">
@@ -339,7 +339,7 @@
 						</span>
 					</div>
 				</li>
-                <li class="dep"><a href="javascript:;" id="topNavi4"><span>프리스타일</span></a>
+                <li class="dep"><a href="/ex/product_list/product_list" id="topNavi4"><span>프리스타일</span></a>
 					<div id="topSubm4">
 						<span class="bigTit">
 							<p>프리스타일</p>
@@ -347,8 +347,8 @@
 						</span>
 
 						<ul>
-							<li><a href="#">중형</a></li>
-							<li><a href="#">대형</a></li>
+							<li><a href="/ex/product_list/product_list">중형</a></li>
+							<li><a href="/ex/product_list/product_list">대형</a></li>
 							
 						</ul>
 
@@ -358,7 +358,7 @@
 						</span>
 					</div>
 				</li>
-                <li class="dep"><a href="javascript:;" id="topNavi4"><span>비말차단</span></a>
+                <li class="dep"><a href="/ex/product_list/product_list" id="topNavi4"><span>비말차단</span></a>
 					<div id="topSubm4">
 						<span class="bigTit">
 							<p>비말차단</p>
@@ -366,14 +366,14 @@
 						</span>
 
 						<ul>
-							<li><a href="#">C형 비말차단</a></li>
-							<li><a href="#">일반형 비말차단</a></li>
+							<li><a href="/ex/product_list/product_list">C형 비말차단</a></li>
+							<li><a href="/ex/product_list/product_list">일반형 비말차단</a></li>
 							
 						</ul>
 
 						<span class="promotion">
-							<a href="#"><img src="/ex/resources/images/img/img_ex_gnb_6.jpg" alt="" /></a>
-							<a href="#"><img src="/ex/resources/images/img/img_ex_gnb_9.jpg" alt="" /></a>
+							<a href="/ex/product_list/product_list"><img src="/ex/resources/images/img/img_ex_gnb_6.jpg" alt="" /></a>
+							<a href="/ex/product_list/product_list"><img src="/ex/resources/images/img/img_ex_gnb_9.jpg" alt="" /></a>
 						</span>
 					</div>
 				</li>
