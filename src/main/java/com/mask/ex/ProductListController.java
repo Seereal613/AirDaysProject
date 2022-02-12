@@ -27,9 +27,44 @@ public class ProductListController {
 	private ProductService service;
 	
 	@RequestMapping(value = "/product_list/product_list", method = RequestMethod.GET)
-	public String postListTest(Model model) throws Exception {
+	public String postList(Model model) throws Exception {
 	
 		model.addAttribute("list", service.list());
+		return "/product_list/product_list";
+	}
+	
+	@RequestMapping(value = "/product_list/product_listDesc", method = RequestMethod.GET)
+	public String postListDesc(Model model) throws Exception {
+	
+		model.addAttribute("list", service.listDesc());
+		return "/product_list/product_list";
+	}
+	
+	@RequestMapping(value = "/product_list/product_listFree", method = RequestMethod.GET)
+	public String postListFree(Model model) throws Exception {
+	
+		model.addAttribute("list", service.listFree());
+		return "/product_list/product_list";
+	}
+	
+	@RequestMapping(value = "/product_list/product_listSlim", method = RequestMethod.GET)
+	public String postListSlim(Model model) throws Exception {
+	
+		model.addAttribute("list", service.listSlim());
+		return "/product_list/product_list";
+	}
+	
+	@RequestMapping(value = "/product_list/product_listKF94", method = RequestMethod.GET)
+	public String postListKF94(Model model) throws Exception {
+	
+		model.addAttribute("list", service.listKF94());
+		return "/product_list/product_list";
+	}
+	
+	@RequestMapping(value = "/product_list/product_listBM", method = RequestMethod.GET)
+	public String postListBM(Model model) throws Exception {
+	
+		model.addAttribute("list", service.listBM());
 		return "/product_list/product_list";
 	}
 	

@@ -26,5 +26,26 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="list" resultType="com.mask.dto.ProductDTO">	
 		 select productNum, productName, productPrice, productImage, productCnt from product
 	</select> 
+	
+	<!--새로 추가  -->
+	<select id="listDesc" resultType="com.mask.dto.ProductDTO">	
+		select productNum, productName, productPrice, productImage, productCnt from product order by productNum desc
+	</select>
+	
+	<select id="listSlim" resultType="com.mask.dto.ProductDTO">	
+		select * from product where productName LIKE '%슬림핏%' 
+	</select>
+	
+	<select id="listKF94" resultType="com.mask.dto.ProductDTO">	
+		select * from product where productName LIKE '%KF94%' 
+	</select>
+
+	<select id="listBM" resultType="com.mask.dto.ProductDTO">	
+		select * from product where productName LIKE '%비말차단%' 
+	</select>
+	
+	<select id="listFree" resultType="com.mask.dto.ProductDTO">	
+		select * from product where productName LIKE '%프리스타일%' 
+	</select>
 
 </mapper>

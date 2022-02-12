@@ -47,6 +47,41 @@ public class ProductServiceImpl implements ProductService{
 		List<ProductDTO> pdto =dao.list();
 		return pdto;
 	}
+
+	@Override
+	public List<ProductDTO> listDesc() throws Exception {
+		ProductDAO dao=sqlSession.getMapper(ProductDAO.class);
+		List<ProductDTO> pdto =dao.listDesc();
+		return pdto;
+	}
+
+	@Override
+	public List<ProductDTO> listSlim() throws Exception {
+		ProductDAO dao=sqlSession.getMapper(ProductDAO.class);
+		List<ProductDTO> pdto =dao.listSlim();
+		return pdto;
+	}
+
+	@Override
+	public List<ProductDTO> listKF94() throws Exception {
+		ProductDAO dao=sqlSession.getMapper(ProductDAO.class);
+		List<ProductDTO> pdto =dao.listKF94();
+		return pdto;
+	}
+
+	@Override
+	public List<ProductDTO> listBM() throws Exception {
+		ProductDAO dao=sqlSession.getMapper(ProductDAO.class);
+		List<ProductDTO> pdto =dao.listBM();
+		return pdto;
+	}
+
+	@Override
+	public List<ProductDTO> listFree() throws Exception {
+		ProductDAO dao=sqlSession.getMapper(ProductDAO.class);
+		List<ProductDTO> pdto =dao.listFree();
+		return pdto;
+	}
 	
 
 }
