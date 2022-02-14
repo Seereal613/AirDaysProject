@@ -2,13 +2,14 @@ package com.mask.dto;
 
 import java.util.Date;
 
+
 public class BoardDTO {
 	private int titleNum;
 	private String userID;
-	private String adminID;
 	private String faqTitle;
 	private String faqContent;
 	private String questionType;
+	private String email;
 	private Date inquiryDate;
 	public int getTitleNum() {
 		return titleNum;
@@ -21,12 +22,6 @@ public class BoardDTO {
 	}
 	public void setUserID(String userID) {
 		this.userID = userID;
-	}
-	public String getAdminID() {
-		return adminID;
-	}
-	public void setAdminID(String adminID) {
-		this.adminID = adminID;
 	}
 	public String getFaqTitle() {
 		return faqTitle;
@@ -46,6 +41,12 @@ public class BoardDTO {
 	public void setQuestionType(String questionType) {
 		this.questionType = questionType;
 	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	public Date getInquiryDate() {
 		return inquiryDate;
 	}
@@ -54,9 +55,10 @@ public class BoardDTO {
 	}
 	@Override
 	public String toString() {
-		return "BoardDTO [titleNum=" + titleNum + ", userID=" + userID + ", adminID=" + adminID + ", faqTitle="
-				+ faqTitle + ", faqContent=" + faqContent + ", questionType=" + questionType + ", inquiryDate="
-				+ inquiryDate + "]";
+		return "BoardDTO [titleNum=" + titleNum + ", userID=" + userID + ", faqTitle=" + faqTitle + ", faqContent="
+				+ faqContent + ", questionType=" + questionType + ", email=" + email + ", inquiryDate=" + inquiryDate
+				+ "]";
 	}
-	
 }
+
+	

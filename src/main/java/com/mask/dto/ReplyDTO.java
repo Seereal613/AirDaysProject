@@ -4,30 +4,21 @@ import java.util.Date;
 
 public class ReplyDTO {
 	private Integer rno;
-	private Integer bno;
+	private Integer titleNum;
 	private String replytext;
 	private String replyer;
-
-	private Date regdate;
-	private Date updatedate;
-	
-	
-	@Override
-	public String toString() {
-		return "ReplyDTO [rno=" + rno + ", bno=" + bno + ", replytext=" + replytext + ", replyer=" + replyer
-				+ ", regdate=" + regdate + ", updatedate=" + updatedate + "]";
-	}
+	private Date REPDATE;
 	public Integer getRno() {
 		return rno;
 	}
 	public void setRno(Integer rno) {
 		this.rno = rno;
 	}
-	public Integer getBno() {
-		return bno;
+	public Integer getTitleNum() {
+		return titleNum;
 	}
-	public void setBno(Integer bno) {
-		this.bno = bno;
+	public void setTitleNum(Integer titleNum) {
+		this.titleNum = titleNum;
 	}
 	public String getReplytext() {
 		return replytext;
@@ -41,18 +32,19 @@ public class ReplyDTO {
 	public void setReplyer(String replyer) {
 		this.replyer = replyer;
 	}
-	public Date getRegdate() {
-		return regdate;
+	public Date getREPDATE() {
+		return REPDATE;
 	}
-	public void setRegdate(Date regdate) {
-		this.regdate = regdate;
+	public void setREPDATE(Date rEPDATE) {
+		REPDATE = rEPDATE;
 	}
-	public Date getUpdatedate() {
-		return updatedate;
+	@Override
+	public String toString() {
+		return "ReplyDTO [rno=" + rno + ", titleNum=" + titleNum + ", replytext=" + replytext + ", replyer=" + replyer
+				+ ", REPDATE=" + REPDATE + "]";
 	}
-	public void setUpdatedate(Date updatedate) {
-		this.updatedate = updatedate;
-	}
+
+	
 	
 
 }

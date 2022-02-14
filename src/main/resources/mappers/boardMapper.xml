@@ -7,7 +7,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		insert into
 		FAQ(titlenum,userid,faqtitle,faqcontent,inquirydate,questiontype)
 		values
-		(seq_faq.nextval,#{userid},#{faqtitle},#{faqcontent},#{inquirydate},#{questiontype})
+		(seq_faq.nextval,#{userID},#{faqTitle},#{faqContent},sysdate,#{questionType})
 	</insert>
 	<select id="read" resultType="com.mask.dto.BoardDTO">
 		select * from FAQ where
@@ -15,7 +15,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</select>
 	<update id="update">
 		update FAQ set
-		faqtitle=#{faqtitle},faqcontent=#{faqcontent},questiontype=#{questiontype}
+		faqTitle=#{faqTitle},faqContent=#{faqContent},questionType=#{questionType}  <!-- 여기 부분 쿼리 수정해야함  member email 이랑 FAQ email 이랑 조인 어케함?ㅜㅜ-->
 		where titleNum=#{titleNum}
 	</update>
 	<delete id="delete">
@@ -24,10 +24,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<sql id="search">
 		<if test="searchType!=null">
 			<if test="searchType == 't'.toString()"> and faqtitle like '%'|| #{keyword}||'%'</if>
-			<if test="searchType == 'c'.toString()"> and questiontype ='불량품문의'</if>
-			<if test="searchType == 'w'.toString()"> and questiontype ='색상문의'</if>
-			<if test="searchType == 'tc'.toString()"> and questiontype = '재고문의' </if>
-			<if test="searchType == 'cw'.toString()"> and questiontype = '기타문의' </if>
+			<if test="searchType == 'c'.toString()"> and questiontype ='불량품문의' and faqtitle like '%'|| #{keyword}||'%'</if>
+			<if test="searchType == 'w'.toString()"> and questiontype ='상품문의' and faqtitle like '%'|| #{keyword}||'%'</if>
+			<if test="searchType == 'tc'.toString()"> and questiontype = '재고문의' and faqtitle like '%'|| #{keyword}||'%'</if>
+			<if test="searchType == 'cw'.toString()"> and questiontype = '기타문의' and faqtitle like '%'|| #{keyword}||'%'</if>
 			<!-- <if test="searchType == 't'.toString()"> and title like '%'|| #{keyword}||'%' 
 				</if> <if test="searchType == 'c'.toString()"> and content like '%'|| #{keyword}||'%' 
 				</if> <if test="searchType == 'w'.toString()"> and writer like '%'|| #{keyword}||'%' 
@@ -46,9 +46,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	from faq where 1=1  ]]>
 		<include refid="search" />
 	<![CDATA[ and rownum <= #{page} * #{perPageNum} and titlenum > 0 ) 
-	where rn > (#{page} -1) * #{perPageNum}]]>
+	where rn > (#{page} -1) * #{perPageNum} order by titlenum desc]]> 
 	</select>
-	<!-- <select id="listSearch" resultType="com.mask.dto.BoardDTO"> <![CDATA[select 
+	<!-- <select id="listSearch" resultType="com.human.dto.BoardDTO"> <![CDATA[select 
 		bno, title, content, writer, viewcnt, regdate from (select /*+INDEX_DESC(tbl_board,pk_board)*/ 
 		rownum rn,bno,title,content,writer,viewcnt,regdate from tbl_board where 1=1 
 		]]> <include refid="search"/> <![CDATA[ and rownum <= #{page} * #{perPageNum} 
@@ -56,16 +56,6 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="listSearchCount" resultType="int">
 	<![CDATA[ select count(titleNum) from FAQ where 1=1 ]]>
 		<include refid="search" />
-	<![CDATA[ and titleNum > 0 ]]>
+	<![CDATA[ and titleNum > 0 order by titlenum desc]]>
 	</select>
 </mapper>
-
-
-
-
-
-
-
-
-
-

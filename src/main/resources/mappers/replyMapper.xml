@@ -4,39 +4,32 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.mask.dao.ReplyDAO">
 	<select id="list" resultType="com.mask.dto.ReplyDTO">
-		select
-		*
-		from
-		tbl_reply
-		where bno =
-		#{bno}
-		order by rno desc
+		select * from Rep where titleNum = #{titleNum} order by rno desc ;
 	</select>
 	<insert id="insert">
-		insert into tbl_reply (rno, bno, replytext, replyer)
-		values (seq_reply.nextval, #{bno},#{replytext},#{replyer})
+		insert into Rep (rno, titleNum, replytext, replyer,repdate)
+		values (seq_reply.nextval, #{titleNum},#{replytext},#{replyer},sysdate)
 	</insert>
-
 	<update id="update">
-		update tbl_reply set replytext = #{replytext},
-		updatedate = sysdate
+		update Rep set replytext = #{replytext},
+		REPDATE = sysdate
 		where rno = #{rno}
 	</update>
 
 	<delete id="delete">
-		delete from tbl_reply where rno =#{rno}
+		delete from rep where rno = #{rno}
 	</delete>
 
 	<select id="listPage" resultType="com.mask.dto.ReplyDTO">
 		<![CDATA[
 		select
-		rno, bno, replytext, replyer, regdate, updatedate
+		rno, titleNum, replytext, replyer, repdate
 		from
 		(
-		select /*+INDEX_DESC(tbl_reply pk_reply))*/
-		rownum rn, rno, bno, replytext, replyer, regdate, updatedate
-		from tbl_reply
-		where bno = #{bno}
+		select /*+INDEX_DESC(rep pk_reply))*/
+		rownum rn, rno, titleNum, replytext, replyer, repdate
+		from rep
+		where titleNum = #{titleNum}
 		and rno > 0
 		and rownum <= #{pm.page} * #{pm.perPageNum}
 		)
@@ -54,4 +47,3 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  ]]>
  </select>
 </mapper>
-

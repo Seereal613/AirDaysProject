@@ -24,9 +24,9 @@ public class ReplyServiceImpl implements ReplyService {
   }
 
   @Override
-  public List<ReplyDTO> listReply(Integer bno) throws Exception {
+  public List<ReplyDTO> listReply(Integer titleNum) throws Exception {
 	  ReplyDAO dao=sqlSession.getMapper(ReplyDAO.class);
-    return dao.list(bno);
+    return dao.list(titleNum);
   }
 
   @Override
@@ -41,14 +41,14 @@ public class ReplyServiceImpl implements ReplyService {
     dao.delete(rno);
   }
   @Override
-  public List<ReplyDTO> listReplyPage(Integer bno, PageMaker cri) 
+  public List<ReplyDTO> listReplyPage(Integer titleNum, PageMaker cri) 
       throws Exception {
 	  ReplyDAO dao=sqlSession.getMapper(ReplyDAO.class);
-    return dao.listPage(bno, cri);
+    return dao.listPage(titleNum, cri);
   }
   @Override
-  public int count(Integer bno) throws Exception {
+  public int count(Integer titleNum) throws Exception {
 	  ReplyDAO dao=sqlSession.getMapper(ReplyDAO.class);
-    return dao.count(bno);
+    return dao.count(titleNum);
   }
 }

@@ -15,7 +15,7 @@ public interface BoardDAO {
 
 	  public void delete(int titleNum) throws Exception;
 	//  
-	  public void faqtop(BoardDTO vo) throws Exception;
+	  
 	  public List<BoardDTO> listSearch(PageMaker pm)throws Exception;
 	//  
 	  public int listSearchCount(PageMaker pm)throws Exception;

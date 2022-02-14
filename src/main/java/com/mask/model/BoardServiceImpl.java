@@ -48,10 +48,4 @@ public class BoardServiceImpl implements BoardService {
 		BoardDAO dao=sqlSession.getMapper(BoardDAO.class);
 		return dao.listSearchCount(pm);
 	}
-	@Override
-	public void faqtop(BoardDTO board) throws Exception {
-		BoardDAO dao=sqlSession.getMapper(BoardDAO.class);
-		dao.faqtop(board);
-	}
-
 }

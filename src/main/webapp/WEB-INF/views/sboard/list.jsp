@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<link rel="stylesheet" type="text/css" href="/ex/resources/css/FAQ.css?var=1" />
   <%@include file="../include/header.jsp"%>
   <script>
   var result = '${msg}';
@@ -21,7 +22,14 @@
 		  location.href="/ex/sboard/write";
 	  });
   });
-  	
+/* 
+  function faqTop() { 
+		let f=documnet.createElement('form');
+		f.setAttribute('method','post');
+		f.setAttribute('action','goPost.do');
+		document.body.appendChild(f);
+		f.submit();
+	} */
   </script>
 <div class="layout_body">
     <div class="subpage_wrap">
@@ -32,15 +40,15 @@
                 </h2>
                <ul>
                    <li><a href="#">공지사항</a></li>
-                   <li><a href="/ex/faqtop5/faqtop">자주 하는 질문</a></li>
-                   <li><a href="#">상품 문의</a></li>
+                   <li><a href="faqtop">자주 하는 질문</a></li>
+                   <li><a href="list">상품 문의</a></li>
                    <li><a href="#">상품 후기</a></li>
                </ul>
             </div>
             <scrpit href="/css/layout.js"></scrpit>
         </div>
         <div class = "subpage_container">
-            <a id="subAllButton" class = "btn_sub_all" href="javascript:void(0)">
+            <a id="subAllButton" class = "btn_sub_all" >
             </a>
             <div class = "title_container">
                 <h2>상품 문의</h2>
@@ -53,9 +61,9 @@
                         <!-- <option value="n" selected>----</option>
                         <option value="n">----</option> -->
                         <option value="c" <c:out value="${pageMaker.searchType eq 'c'?'selected':'' }"/>>불량품문의</option>
-                        <option value="w" <c:out value="${pageMaker.searchType eq 'w'?'selected':'' }"/>>색상문의</option>
-                        <option value="cw" <c:out value="${pageMaker.searchType eq 'tc'?'selected':'' }"/>>재고문의</option>
-                        <option value="tcw" <c:out value="${pageMaker.searchType eq 'cw'?'selected':'' }"/>>기타 문의</option>
+                        <option value="w" <c:out value="${pageMaker.searchType eq 'w'?'selected':'' }"/>>상품문의</option>
+                        <option value="tc" <c:out value="${pageMaker.searchType eq 'tc'?'selected':'' }"/>>재고문의</option>
+                        <option value="cw" <c:out value="${pageMaker.searchType eq 'cw'?'selected':'' }"/>>기타문의</option>
                     </select>
                 </div>
                 <div class="right">
@@ -76,12 +84,12 @@
                     <ul class="tbody_complete">
                         <li style="width: 10px">${dto.titleNum }</li>
                         <li style="width: 100px">${dto.questionType }</li>
-                        <li><a href="/ex/sboard/read${pageMaker.makeSearch()}&bno=${dto.titleNum}">${dto.faqTitle }</a></li>
+                        <li><a href="/ex/sboard/read${pageMaker.makeSearch()}&titleNum=${dto.titleNum}">${dto.faqTitle }</a></li>
                         <li style="width: 100px">${dto.userID }</li>
                         <li style="width: 200px">
                         <fmt:formatDate pattern="yyyy-MM-dd HH:mm" value= "${dto.inquiryDate }"/></li>
                     </ul>
-                      </c:forEach>    
+                      </c:forEach>
             </div>
             <div id="pagingDisplay" class="paging_navigation">
                 <c:if test="${pageMaker.page !=1}">
@@ -108,7 +116,7 @@
             </div>
             <ul class="bbs_bottom_wrap">
             <li class="right2">
-                <button class='writeBtn'>상품 문의 쓰기</button>
+                <button type="button" class="writeBtn">상품 문의 쓰기</button>
             </li>
             </ul>    
         </div>

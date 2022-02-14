@@ -19,9 +19,9 @@ public interface ReplyDAO {
 	  public void delete(Integer rno) throws Exception;
 
 	  public List<ReplyDTO> listPage(
-	      @Param("bno") Integer bno, @Param("pm") PageMaker pm) throws Exception;
+	      @Param("titleNum") Integer titleNum, @Param("pm") PageMaker pm) throws Exception;
 
-	  public int count(Integer bno) throws Exception;
+	  public int count(Integer titleNum) throws Exception;
 
 	}
 

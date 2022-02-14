@@ -1,16 +1,21 @@
 
 package com.mask.ex;
 
+import java.util.Locale;
 
 import javax.inject.Inject;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.mask.dto.BoardDTO;
@@ -22,6 +27,8 @@ import com.mask.vo.PageMaker;
 public class SearchBoardController {
 	@Inject
 	private BoardService bm;
+	
+	
 
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
@@ -40,6 +47,8 @@ public class SearchBoardController {
 	@RequestMapping(value = "/write", method = RequestMethod.GET)
 	public void writeGet() throws Exception {
 		// return "/sboard/write
+		
+		
 	}
 	@RequestMapping(value = "/write", method = RequestMethod.POST)
 	public String writePost(BoardDTO board, RedirectAttributes rttr) throws Exception {
@@ -50,6 +59,7 @@ public class SearchBoardController {
 	}
 	@RequestMapping(value = "/read", method = RequestMethod.GET)
 	public void read(@RequestParam("titleNum") int titleNum, PageMaker pm, Model model) throws Exception {
+		System.out.println(titleNum);
 		System.out.println(pm);
 		model.addAttribute(bm.read(titleNum));
 		// return "/sboard/read
@@ -65,11 +75,19 @@ public class SearchBoardController {
 		rttr.addFlashAttribute("msg", "success");
 		return "redirect:/sboard/list";
 	}
+	
+	//http://localhost:8081/ex/sboard/modify?titleNum=7
+		
 	@RequestMapping(value = "/modify", method = RequestMethod.GET)
-	public void modifyGet(@RequestParam("titleNum") int titleNum, PageMaker pm, Model model) throws Exception {
-		System.out.println(pm);
+	public void modifyGet(@RequestParam("titleNum") int titleNum,PageMaker pm,Model model) throws Exception {
+//		System.out.println(titleNum);
 		model.addAttribute(bm.read(titleNum));
+///*		System.out.println(titleNum);
+//		System.out.println(pm);
+//		bm.read(titleNum);
+//		model.addAttribute(dto);
 	}
+	
 	@RequestMapping(value = "/modify", method = RequestMethod.POST)
 	public String modifyPost(BoardDTO board, PageMaker pm, Model model, RedirectAttributes rttr) throws Exception {
 		bm.modify(board);
@@ -82,7 +100,7 @@ public class SearchBoardController {
 		return "redirect:/sboard/list";
 	}
 	@RequestMapping(value = "/faqtop", method = RequestMethod.GET)
-	public void faqtopGet(BoardDTO board) throws Exception {
-	bm.faqtop(board);
+	public void faqtopGet() throws Exception {
 	}
+
 }

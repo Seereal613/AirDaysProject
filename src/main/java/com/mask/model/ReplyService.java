@@ -16,9 +16,9 @@ public interface ReplyService {
 
 		  public void removeReply(Integer rno) throws Exception;
 
-		  public List<ReplyDTO> listReplyPage(Integer bno, PageMaker pm) 
+		  public List<ReplyDTO> listReplyPage(Integer titleNum, PageMaker pm) 
 		      throws Exception;
 
-		  public int count(Integer bno) throws Exception;
+		  public int count(Integer titleNum) throws Exception;
 
 }
