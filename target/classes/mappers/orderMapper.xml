@@ -69,24 +69,10 @@ select * from mask_order where userID=#{userID}
 </select>
 
 <select id="selctOrderDetail" resultType="OrderDto3">
-	select o.orderNum,
-			o.addressee,
-			o.address,
-			o.tel,
-			o.payPrice,
-			o.productCnt,
-			o.productName,
-			o.payMeans,
-			o.orderDate,
-			o.userID,
-			o.state,
-			w.productNum,
-			p.productPrice,
-			p.productImage
-	from mask_order o,wishlist w,product p 	
-	where o.userid=w.userid 
-	and w.productNum=p.productNum
-	and o.orderNum=#{orderNum}
+select * from mask_order o,product p 	
+	where  o.productName=p.productName
+	and orderNum=#{orderNum}
+	<!-- and w.wishlistNum=#{wishlistNum} -->
 </select>
 
 <!-- UPDATE : address -->

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.myPageOrderBox{
+	padding:50px;
+	}
+
+#myPageOrder{
+   	margin: auto;
+   	width: 1100px;
+   	border-collapse:collapse;
+   }
+   #myPageOrder td,th{
+   	height: 50px; 
+   	border-bottom:2px solid #E9E9E9;
+   	text-align: center;
+   }
+   #cancleBtn{
+   	padding:2px;
+   	float:right;
+	background: gray;
+	color:#fff; 
+	border:none;
+	border-radius:3px;
+	box-shadow: 0 4px 12px rgba(17, 17, 17, 0.3);
+   }
+   #cancleBtn:focus{
+   	outline:0;
+   }
+   #cancleBtn:hover{
+   	background:rgba(17, 17, 17,0.9);
+   	cursor:pointer;
+   	box-shadow: 0 2px 4px rgba(17, 17, 17,0.6);
+   }

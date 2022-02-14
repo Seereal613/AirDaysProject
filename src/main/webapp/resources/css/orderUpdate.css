@@ -1,0 +1,104 @@
+@charset "UTF-8";
+#orderContent{
+     	position: relative;
+        top: 17px; 
+        width: 100%;
+  		padding-right: 15px;
+  		padding-left: 15px;
+ 		margin-right: auto;
+  		margin-left: auto;
+  		margin-top: 30px;
+    }
+     @media (min-width: 1200px)
+	{
+	  #orderContent{
+	    max-width: 1140px;
+	  }
+	}
+     /* h2{
+     	text-align: left;
+     	margin:30px;
+     } */
+     #order_info{
+        /* display: flex;
+        flex-direction: row; */
+     }
+     #orderProductInfo{
+       /* width: 700px; */
+       margin-bottom: 10px;
+  	 }
+  	 #orderProductInfo>table{
+  	  	padding:10px; 
+        display: block;
+  	 }
+    
+  	 #orderProductInfoTable td{
+  	  	border-bottom:1px solid #ececec;
+  	 }
+	 #trPadding>td{padding-bottom:5px;}		
+	 
+	 .flexBox{
+	 	display: flex;
+	 	margin-top:50px;
+	 }
+	 .recipientTd1{
+    	width: 50px;
+    }
+ 	 #padding30{
+ 	   	padding-left:30px; 
+ 	 }
+     #btn{
+     	float:right;
+     	margin-right:5px;
+     }
+     .productImage{
+     	padding:5px;
+     }
+     #orderProduct{
+     	padding-left:150px;
+     }
+     .font_bold{
+     	font-weight:bold;
+     	font-size:14px;
+     	margin-bottom:10px;
+     }
+     #recipientInfo{
+ 		display: block; 
+ 		flex:1; 
+     }
+
+    #payment{
+        height: 300px;
+        /* padding-left:-30px;  */
+        /* padding-top:10px; */
+       /*  border: 1.5px solid #E9E9E9; */
+        border-collapse:collapse;
+        flex:1; 
+        
+     }
+     #payment>table{
+		width: 400px;
+     }
+     #payment td{
+     	height:30px;
+     	/* border-bottom:1px solid #E9E9E9;
+     	border-top:1px solid #E9E9E9; */
+     }
+     .paymentTd2{
+     	text-align: right; 
+     	margin-right:10px
+     }
+     #pay{
+        margin-left:30px;
+
+     }
+
+     input{
+        height: 30px;
+        margin-bottom: 3px;
+        border:1px;
+        margin-left:10px; 
+     }
+     .addressBox{
+        width: 400px;
+     } 

@@ -1,0 +1,140 @@
+@charset "UTF-8";
+#orderContent{
+     	position: relative;
+        top: 17px; 
+        /* width: 100%; */
+  		padding-right: 15px;
+  		padding-left: 15px;
+ 		margin-right: auto;
+  		margin-left: auto;
+    }
+     @media (min-width: 1200px)
+	{
+	  #orderContent{
+	    max-width: 1140px;
+	  }
+	}
+     #orderTitle{
+     	text-align: center;
+     	margin:30px;
+     }
+     #order_info{
+        display: flex;
+        flex-direction: row;
+        flex:4; 
+     }
+     #orderProductInfo{
+       width: 700px;
+       margin-bottom: 10px;
+       
+  	 }
+  	 #orderProductInfo>table{
+  	  	padding:10px; 
+        display: block;
+  	 }
+    
+  	 #orderProductInfoTable td{
+  	  	border-bottom:1px solid #ececec;
+  	  	background: #fafafa;
+  	 }
+
+ 	 #padding10{
+ 	  	padding:10px;
+ 	 }
+ 	 #padding30{
+ 	   	padding-left:30px; 
+ 	 }
+     #btn{
+     	float:right;
+     	margin-right:5px;
+     }
+     .productImage{
+     	padding:5px;
+     }
+     #orderProduct{
+     	padding-left:150px;
+     }
+     .font_bold{
+     	font-weight:bold;
+     	font-size:14px;
+     }
+     #recipientInfo{
+ 		display: block;
+        margin: 15px;
+     }
+    .recipientTd1{
+    	width: 50px;
+    }
+	#Newrecive{border:1px;}
+    #payment{
+        flex:1;
+        height: 450px;
+        margin-top:15px; 
+        margin-left: 50px;
+        padding-left:10px;
+        padding-top:10px;
+        border: 1.5px solid #E9E9E9;
+        border-collapse:collapse;
+     }
+     #payment>table{
+     	margin:30px;
+     	width: 320px;
+     }
+     #payment td{
+     	height:50px;
+     	border-bottom:2px dotted #E9E9E9;
+     	
+     }
+     .paymentTd2{
+     	text-align: right;
+     	margin-right:10px;
+     }
+     #paymentTitle{
+     	text-align: center;
+     	margin:15px;
+     }
+     #pay>span{
+        margin-left:30px;
+
+     }
+     table{
+        border-collapse: collapse;
+     }  
+     input{
+        height: 30px;
+        margin-bottom: 3px;
+        margin-left:10px;
+        border-top:1px;
+        border-left:1px;
+        border-right:1px;
+     }
+     .addressBox{
+        width: 400px;
+     }
+     select{
+        height: 30px;
+        font-size: 15px;
+     }
+     #payBtn{
+        width: 300px;
+        height: 35px;
+        /* border: hidden; */
+        border: none;
+        background-color: rgb(75, 74, 74);
+        color: aliceblue;
+        font-weight: bold;
+        font-size: 16px;
+        border-radius: 10px;
+        margin-bottom:20px;
+        margin-left: 30px;
+     }
+     #payBtn:hover{
+        background: black;
+        cursor:pointer;
+     }
+     #equalsBtn{
+        /* height: 35px; */
+        margin-left: 20px;
+        /* border: hidden; */
+        font-size: 15px;
+     }      
