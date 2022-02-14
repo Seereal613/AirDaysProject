@@ -22,7 +22,10 @@
 </head>
 
 <body>
-    <div class="container"></div>
+<header>
+<%@include file="../include/header.jsp"%>
+</header>
+   <!--  <div class="container"></div>
     <header class="header">
     <div class="wrap">
     <div class="header_login">
@@ -61,7 +64,7 @@
         </div>
     </div>
     </div>
-    </header>
+    </header> -->
     <form name="orderform" id="orderform" method="post" class="orderform"  >
     
         <input type="hidden" name="cmd" value="order">
