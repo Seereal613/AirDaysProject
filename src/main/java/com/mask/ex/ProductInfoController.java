@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.mask.dto.WishlistDTO;
 import com.mask.model.ProductService;
 
 /**
@@ -20,9 +21,6 @@ import com.mask.model.ProductService;
 @Controller
 @RequestMapping("/product_info/*")
 public class ProductInfoController {
-	
-	private static final Logger logger = LoggerFactory.getLogger(ProductInfoController.class);
-	
 	
 	@Inject
 	private ProductService service;
@@ -41,5 +39,7 @@ public class ProductInfoController {
 	public void product_list_test(@RequestParam("productNum") String productNum,Model model) throws Exception{
 		model.addAttribute("pdto",service.read(productNum));
 	}
+	
+
 	
 }

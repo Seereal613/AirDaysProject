@@ -9,20 +9,20 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			values (#{productNum},#{productName},#{productPrice}, #{productImage}, #{productCnt})
 	</insert>
 
-
+<!-- 읽기 -->
  	<select id="read" resultType="com.mask.dto.ProductDTO"> 
 		select * from product where productNum=#{productNum} 
 	</select>
-	
+	<!-- 수정 -->
 	<update id="update"> 
 		update product set productNum=#{productNum}, productName=#{productName}, productPrice=#{productPrice}, productImage=#{productImage}, productCnt=#{productCnt} where productNum = #{productNum}
 	</update>
 	
-	
+	<!-- 삭제 -->
 	<delete id="delete"> 
 	delete from product where productNum=#{productNum} 
 	</delete>		
-	
+	<!-- 리스트 조회 -->
 	<select id="list" resultType="com.mask.dto.ProductDTO">	
 		 select productNum, productName, productPrice, productImage, productCnt from product
 	</select> 
@@ -31,21 +31,29 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="listDesc" resultType="com.mask.dto.ProductDTO">	
 		select productNum, productName, productPrice, productImage, productCnt from product order by productNum desc
 	</select>
-	
+	<!-- 슬림핏 -->
 	<select id="listSlim" resultType="com.mask.dto.ProductDTO">	
 		select * from product where productName LIKE '%슬림핏%' 
 	</select>
-	
+	<!-- kf94  -->
 	<select id="listKF94" resultType="com.mask.dto.ProductDTO">	
 		select * from product where productName LIKE '%KF94%' 
 	</select>
-
+	<!-- 비말차단 -->
 	<select id="listBM" resultType="com.mask.dto.ProductDTO">	
 		select * from product where productName LIKE '%비말차단%' 
 	</select>
-	
+	<!-- 프리사이즈 찾기 -->
 	<select id="listFree" resultType="com.mask.dto.ProductDTO">	
 		select * from product where productName LIKE '%프리스타일%' 
 	</select>
+	
+	<!-- 장바구니에 추가 -->
+	<insert id="insertOrder">
+			insert into Wishlist (wishlistNum, productColor, userID, productCnt, productNum)
+			values (#{wishlistNum},'color','userID', #{productCnt}, #{productNum})
+	</insert>
+	
+	
 
 </mapper>

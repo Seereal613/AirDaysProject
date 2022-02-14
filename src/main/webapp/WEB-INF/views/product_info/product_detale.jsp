@@ -15,6 +15,7 @@
 
 	<div class="middle" style="height: 600px;">
 		<div class="product_view">
+			<form method="post" role="form">
 			<h2 class="product_title" style="width: 600px;">${pdto.productName}</h2>
 			<table>
 				<colgroup>
@@ -75,6 +76,7 @@
 			<div class="btns">
 				<a href="/ex/zboard/airtop" class="btn1">장바구니</a> <a href="/ex/order/order" class="btn2">구매하기</a>
 			</div>
+			</form>
 		</div>
 		
 		<div class="content">

@@ -18,23 +18,23 @@
 <meta property="og:image"           content="images/img/kakako.jpg"/>
 <meta property="og:description"     content="airdays"/>
 
-<link rel="stylesheet" type="text/css" href="ex/resource/css/reset.css" />
-<link rel="stylesheet" type="text/css" href="ex/resource/css/main.css" />
-<link rel="stylesheet" type="text/css" href="ex/resource/css/content.css" />
+<link rel="stylesheet" type="text/css" href="/ex/resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="/ex/resources/css/main.css" />
+<link rel="stylesheet" type="text/css" href="/ex/resources/css/content.css" />
 <!-- <link rel="stylesheet" type="text/css" href="/css/customer.css" /> -->
-<link rel="stylesheet" type="text/css" href="ex/resource/css/jquery.fancybox-1.3.4.css" />
-<link rel="shortcut icon" href="ex/resource/images/ico/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/ex/resources/css/jquery.fancybox-1.3.4.css" />
+<link rel="shortcut icon" href="/ex/resources/images/ico/favicon.ico">
 
-<script type="text/javascript" src="ex/resource/js/jquery.min.js"></script>
-<script type="text/javascript" src="ex/resource/js/modernizr.js"></script>
-<script type="text/javascript" src="ex/resource/js/common.js"></script>
-<script type="text/javascript" src="ex/resource/js/top_navi.js"></script>
-<script type="text/javascript" src="ex/resource/js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="ex/resource/js/idangerous.swiper-2.1.min.js"></script>
-<script type="text/javascript" src="ex/resource/js/customInput.jquery.js"></script>
-<script type="text/javascript" src="ex/resource/js/imagesloaded.pkgd.min.js"></script>
-<script type="text/javascript" src="ex/resource/js/jquery.matchHeight-min.js"></script>
-<script type="text/javascript" src="ex/resource/js/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="/ex/resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="/ex/resources/js/modernizr.js"></script>
+<script type="text/javascript" src="/ex/resources/js/common.js"></script>
+<script type="text/javascript" src="/ex/resources/js/top_navi.js"></script>
+<script type="text/javascript" src="/ex/resources/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/ex/resources/js/idangerous.swiper-2.1.min.js"></script>
+<script type="text/javascript" src="/ex/resources/js/customInput.jquery.js"></script>
+<script type="text/javascript" src="/ex/resources/js/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="/ex/resources/js/jquery.matchHeight-min.js"></script>
+<script type="text/javascript" src="/ex/resources/js/jquery.fancybox-1.3.4.pack.js"></script>
 
 
 <!--[if lt IE 9]>
@@ -50,16 +50,16 @@
 <!--익스레이어팝업-->
 <div id="ieUser" style="display:none">
 	<div class="iewrap">	
-		<p class="img"><img src="ex/resource/images/ico/ico_alert.gif" alt="알림" /></p>
+		<p class="img"><img src="/ex/resources/images/ico/ico_alert.gif" alt="알림" /></p>
 		<p class="txt">IE버전이 낮아 홈페이지 이용에 불편함이 있으므로 <strong>IE9이상이나 다른 브라우저</strong>를 이용해 주세요. </p>
 		<ul>
-			<li><a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie" target="_blank"><img src="ex/resource/images/ico/ico_ie.gif" alt="IE 최신브라우저 다운" ></a></li>
-			<li><a href="https://www.google.com/intl/ko/chrome/browser" target="_blank"><img src="ex/resource/images/ico/ico_chrome.gif" alt="IE 최신브라우저 다운" ></a></li>
-			<li><a href="http://www.mozilla.org/ko/firefox/new" target="_blank"><img src="ex/resource/images/ico/ico_mozila.gif" alt="MOZILA 최신브라우저 다운" ></a></li>
-			<li><a href="http://www.apple.com/safari" target="_blank"><img src="ex/resource/images/ico/ico_safari.gif" alt="SAFARI 최신브라우저 다운" ></a></li>
-			<li><a href="http://www.opera.com/ko/o/ie-simple" target="_blank"><img src="ex/resource/images/ico/ico_opera.gif" alt="OPERA 최신브라우저 다운" ></a></li>		
+			<li><a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie" target="_blank"><img src="/ex/resources/images/ico/ico_ie.gif" alt="IE 최신브라우저 다운" ></a></li>
+			<li><a href="https://www.google.com/intl/ko/chrome/browser" target="_blank"><img src="/ex/resources/images/ico/ico_chrome.gif" alt="IE 최신브라우저 다운" ></a></li>
+			<li><a href="http://www.mozilla.org/ko/firefox/new" target="_blank"><img src="/ex/resources/images/ico/ico_mozila.gif" alt="MOZILA 최신브라우저 다운" ></a></li>
+			<li><a href="http://www.apple.com/safari" target="_blank"><img src="/ex/resources/images/ico/ico_safari.gif" alt="SAFARI 최신브라우저 다운" ></a></li>
+			<li><a href="http://www.opera.com/ko/o/ie-simple" target="_blank"><img src="/ex/resources/images/ico/ico_opera.gif" alt="OPERA 최신브라우저 다운" ></a></li>		
 		</ul>
-		<p class="btn" onclick="msiehide();"><img src="ex/resource/images/ico/ico_close.gif" alt="닫기" /></p>
+		<p class="btn" onclick="msiehide();"><img src="/ex/resources/images/ico/ico_close.gif" alt="닫기" /></p>
 	</div>
 </div>
 <!--//익스레이어팝업-->
@@ -125,23 +125,23 @@
 
 	<div id="headerBanner" style="display:none;">
 		<div class="innerbox pc">
-			<div class="img"><a href="#"><img src="ex/resource/images/img/img_top_banner.png" alt="" /></a></div>
+			<div class="img"><a href="#"><img src="/ex/resources/images/img/img_top_banner.png" alt="" /></a></div>
 			<div class="closebox">
 				<a href="javascript:;" class="aclose" onclick="closeWin('headerBanner','headerBanner');">오늘 하루 이창을 열지 않음</a>
-				<a href="javascript:;" class="pclose"><img src="ex/resource/images/btn/btn_top_banner_close.png" alt="" /></a>
+				<a href="javascript:;" class="pclose"><img src="/ex/resources/images/btn/btn_top_banner_close.png" alt="" /></a>
 			</div>
 		</div>
 
 		<div class="innerbox mobile">
 			<div class="img">
-				<a href="ex/resource/page/cs_clubbioderma.php">
-					<img src="ex/resource/images/img/bioderma_main_mobile_170605_01.png" alt="" />
+				<a href="/ex/resources/page/cs_clubbioderma.php">
+					<img src="/ex/resources/images/img/bioderma_main_mobile_170605_01.png" alt="" />
 					<!-- <img src="SC_IMG_URL/img/headerbanner01_txt_m.jpg" class="mtxt" alt="" /> -->
 				</a>
 			</div>		
 			<div class="closebox">
 				<a href="javascript:;" class="aclose" onclick="closeWin('headerBanner','headerBanner');">오늘 하루 이창을 열지 않음</a>
-				<a href="javascript:;" class="pclose"><img src="ex/resource/images/btn/btn_top_banner_close.png" alt="" /></a>
+				<a href="javascript:;" class="pclose"><img src="/ex/resources/images/btn/btn_top_banner_close.png" alt="" /></a>
 			</div>
 		</div>
 	</div>
@@ -193,7 +193,7 @@
 					<li><a href="#"><span>회원가입</span></a></li>
 					<li><a href="#"><span>마이페이지</span></a></li>
 					<li class="last"><a href="#"><span>장바구니</span></a></li>
-					<li class="searchBtn"><a href="#"><img src="ex/resource/images/btn/btn_top_search.jpg" alt="검색" /></a></li>
+					<li class="searchBtn"><a href="#"><img src="/ex/resources/images/btn/btn_top_search.jpg" alt="검색" /></a></li>
 				</ul>
 			</div>
 		</div>
@@ -202,8 +202,8 @@
 			<div class="inSearchBox">
 				<div class="mainSTy"><input type="text" placeholder="찾으시는 제품을 입력해 주세요." /></div>
 				<ul>
-					<li><a href="#" class="enterBtn"><img src="ex/resource/images/btn/btn_top_search_enter.jpg" alt="" /></a></li>
-					<li><a href="#" class="sccloseBtn"><img src="ex/resource/images/btn/btn_top_search_close.jpg" alt="" /></a></li>
+					<li><a href="#" class="enterBtn"><img src="/ex/resources/images/btn/btn_top_search_enter.jpg" alt="" /></a></li>
+					<li><a href="#" class="sccloseBtn"><img src="/ex/resources/images/btn/btn_top_search_close.jpg" alt="" /></a></li>
 				</ul>
 			</div>
 		</div>
@@ -214,7 +214,7 @@
 	<!-- slide quick menu -->
 	<div id="sqMenu">
 		<div class="sqBox">
-			<div class="qlogo"><a href="#"><img src="ex/resource/images/img/img_gnb_logo_plp.png" alt="INSTITUT ESTHEDERM PARIS" /></a></div>
+			<div class="qlogo"><a href="#"><img src="/ex/resources/images/img/img_gnb_logo_plp.png" alt="INSTITUT ESTHEDERM PARIS" /></a></div>
 			<div class="qmenu">
 				<ul>
 					<li><a href="#">전체상품</a></li>
@@ -227,13 +227,13 @@
                     <li><a href="#">비말차단</a></li>
 				</ul>
 			</div>
-			<a href="javascript:;" class="sq openSearch"><img src="ex/resource/images/btn/btn_sq_search.png" alt="검색" /></a>
+			<a href="javascript:;" class="sq openSearch"><img src="/ex/resources/images/btn/btn_sq_search.png" alt="검색" /></a>
 		</div>
 	</div>
 	<!-- //slide quick menu -->
 
 	<div id="logo">
-		<h1><a href="#"><img src="ex/resource/images/img/img_top_logo.jpg" alt="AIRDAYS" /></a></h1>
+		<h1><a href="#"><img src="/ex/resources/images/img/img_top_logo.jpg" alt="AIRDAYS" /></a></h1>
 	</div>
 	
 	<div id="navigation">
@@ -250,7 +250,7 @@
 						
 						<span class="bigTit">
 							<p>전체상품</p>
-							<img src="ex/resource/images/img/img_main_gnb_01.jpg" alt="" />
+							<img src="/ex/resources/images/img/img_main_gnb_01.jpg" alt="" />
 						</span>
 
 						<ul>
@@ -259,8 +259,8 @@
 						</ul>
 
 						<span class="promotion">
-							<a href="#"><img src="ex/resource/images/img/img_ex_gnb_7.jpg" alt="" /></a>
-							<a href="#"><img src="ex/resource/images/img/img_ex_gnb_12.jpg" alt="" /></a>
+							<a href="#"><img src="/ex/resources/images/img/img_ex_gnb_7.jpg" alt="" /></a>
+							<a href="#"><img src="/ex/resources/images/img/img_ex_gnb_12.jpg" alt="" /></a>
 						</span>
 					</div>
 				</li>
@@ -268,7 +268,7 @@
 					<div id="topSubm2">
 						<span class="bigTit">
 							<p>신제품</p>
-							<img src="ex/resource/images/img/img_main_gnb_02.jpg" alt="" />
+							<img src="/ex/resources/images/img/img_main_gnb_02.jpg" alt="" />
 						</span>
 
 						<ul>
@@ -279,8 +279,8 @@
 						</ul>
 
 						<span class="promotion">
-							<a href="#"><img src="ex/resource/images/img/img_ex_gnb_1.jpg" alt="" /></a>
-							<a href="#"><img src="ex/resource/images/img/img_ex_gnb_20.jpg" alt="" /></a>
+							<a href="#"><img src="/ex/resources/images/img/img_ex_gnb_1.jpg" alt="" /></a>
+							<a href="#"><img src="/ex/resources/images/img/img_ex_gnb_20.jpg" alt="" /></a>
 						</span>
 					</div>
 				</li>
@@ -288,7 +288,7 @@
 					<div id="topSubm3">
 						<span class="bigTit">
 							<p>베스트</p>
-							<img src="ex/resource/images/img/img_main_gnb_01.jpg" alt="" />
+							<img src="/ex/resources/images/img/img_main_gnb_01.jpg" alt="" />
 						</span>
 
 						<ul>
@@ -298,8 +298,8 @@
 						</ul>
 
 						<span class="promotion">
-							<a href="#"><img src="ex/resource/images/img/img_ex_gnb_5.jpg" alt="" /></a>
-							<a href="#"><img src="ex/resource/images/img/img_ex_gnb_19.jpg" alt="" /></a>
+							<a href="#"><img src="/ex/resources/images/img/img_ex_gnb_5.jpg" alt="" /></a>
+							<a href="#"><img src="/ex/resources/images/img/img_ex_gnb_19.jpg" alt="" /></a>
 						</span>
 					</div>
 				</li>
@@ -307,7 +307,7 @@
 					<div id="topSubm4">
 						<span class="bigTit">
 							<p>KF-94</p>
-							<img src="ex/resource/images/img/img_main_gnb_02.jpg" alt="" />
+							<img src="/ex/resources/images/img/img_main_gnb_02.jpg" alt="" />
 						</span>
 
 						<ul>
@@ -319,8 +319,8 @@
 						</ul>
 
 						<span class="promotion">
-							<a href="#"><img src="ex/resource/images/img/img_ex_gnb_2.jpg" alt="" /></a>
-							<a href="#"><img src="ex/resource/images/img/img_ex_gnb_3.jpg" alt="" /></a>
+							<a href="#"><img src="/ex/resources/images/img/img_ex_gnb_2.jpg" alt="" /></a>
+							<a href="#"><img src="/ex/resources/images/img/img_ex_gnb_3.jpg" alt="" /></a>
 						</span>
 					</div>
 				</li>
@@ -328,7 +328,7 @@
 					<div id="topSubm5">
 						<span class="bigTit">
 							<p>KF-94 슬림핏</p>
-							<img src="ex/resource/images/img/img_main_gnb_01.jpg" alt="" />
+							<img src="/ex/resources/images/img/img_main_gnb_01.jpg" alt="" />
 						</span>
 
 						<ul>
@@ -338,8 +338,8 @@
 						</ul>
 
 						<span class="promotion">
-							<a href="#"><img src="ex/resource/images/img/img_ex_gnb_10.jpg" alt="" /></a>
-							<a href="#"><img src="ex/resource/images/img/img_ex_gnb_13.jpg" alt="" /></a>
+							<a href="#"><img src="/ex/resources/images/img/img_ex_gnb_10.jpg" alt="" /></a>
+							<a href="#"><img src="/ex/resources/images/img/img_ex_gnb_13.jpg" alt="" /></a>
 						</span>
 					</div>
 				</li>
@@ -347,7 +347,7 @@
 					<div id="topSubm4">
 						<span class="bigTit">
 							<p>프리스타일</p>
-							<img src="ex/resource/images/img/img_main_gnb_02.jpg" alt="" />
+							<img src="/ex/resources/images/img/img_main_gnb_02.jpg" alt="" />
 						</span>
 
 						<ul>
@@ -357,8 +357,8 @@
 						</ul>
 
 						<span class="promotion">
-							<a href="#"><img src="ex/resource/images/img/img_ex_gnb_8.jpg" alt="" /></a>
-							<a href="#"><img src="ex/resource/images/img/img_ex_gnb_21.jpg" alt="" /></a>
+							<a href="#"><img src="/ex/resources/images/img/img_ex_gnb_8.jpg" alt="" /></a>
+							<a href="#"><img src="/ex/resources/images/img/img_ex_gnb_21.jpg" alt="" /></a>
 						</span>
 					</div>
 				</li>
@@ -366,7 +366,7 @@
 					<div id="topSubm4">
 						<span class="bigTit">
 							<p>비말차단</p>
-							<img src="ex/resource/images/img/img_main_gnb_01.jpg" alt="" />
+							<img src="/ex/resources/images/img/img_main_gnb_01.jpg" alt="" />
 						</span>
 
 						<ul>
@@ -376,8 +376,8 @@
 						</ul>
 
 						<span class="promotion">
-							<a href="#"><img src="ex/resource/images/img/img_ex_gnb_6.jpg" alt="" /></a>
-							<a href="#"><img src="ex/resource/images/img/img_ex_gnb_9.jpg" alt="" /></a>
+							<a href="#"><img src="/ex/resources/images/img/img_ex_gnb_6.jpg" alt="" /></a>
+							<a href="#"><img src="/ex/resources/images/img/img_ex_gnb_9.jpg" alt="" /></a>
 						</span>
 					</div>
 				</li>
@@ -390,7 +390,7 @@
 
 		<!-- mobile mymenu -->
 		<div id="mMenu">
-			<a href="javascript:;"><img src="ex/resource/images/btn/btn_mymenu_open.png" alt="마이메뉴 열기" /></a>
+			<a href="javascript:;"><img src="/ex/resources/images/btn/btn_mymenu_open.png" alt="마이메뉴 열기" /></a>
 		</div>
 		<div id="myMenu">
 			<div class="mCloseBtn">
@@ -424,7 +424,7 @@
 	<!-- slide quick menu -->
 	<div id="sqMenu">
 		<div class="sqBox">
-			<div class="qlogo"><a href="SC_FRONT_URL"><img src="ex/resource/images/img/img_sqlogo.gif" alt="INSTITUT ESTHEDERM PARIS" /></a></div>
+			<div class="qlogo"><a href="SC_FRONT_URL"><img src="/ex/resources/images/img/img_sqlogo.gif" alt="INSTITUT ESTHEDERM PARIS" /></a></div>
 			<div class="qmenu">
 				<ul>
 					<li><a href="SC_PAGE_URL/institut_story.php">INSTITUT ESTHEDERM</a></li>
@@ -436,7 +436,7 @@
 					<li><a href="/front/news.php">NEWS</a></li>
 				</ul>
 			</div>
-			<a href="javascript:;" class="sq openSearch"><img src="ex/resource/images/btn/btn_sq_search.gif" alt="검색" /></a>
+			<a href="javascript:;" class="sq openSearch"><img src="/ex/resources/images/btn/btn_sq_search.gif" alt="검색" /></a>
 		</div>
 	</div>
 	<!-- //slide quick menu -->
@@ -515,15 +515,15 @@ $(document).ready(function(){
 				<ul>
 					<li>
 						<div class="inbox phone">
-							<div class="ico"><img src="ex/resource/images/ico/ico_certification_phone.png" alt="" /></div>
+							<div class="ico"><img src="/ex/resources/images/ico/ico_certification_phone.png" alt="" /></div>
 							<div class="btn"><a href="javascript:popup_niceid();"><span>휴대폰 본인인증</span></a></div>
 						</div>
 					</li>
 
 					<li>
 						<div class="inbox ipin">
-							<div class="ico"><img src="ex/resource/images/ico/ico_certification_ipin.png" alt="" /></div>
-							<div class="btn"><a href="javascript:fnPopup();"><span>아이핀 본인인증</span></a></div>
+							<div class="ico"><img src="/ex/resources/images/ico/ico_certification_ipin.png" alt="" /></div>
+							<div class="btn"><a href="/ex/join/joinform"><span>인증없이 진행</span></a></div>
 						</div>
 					</li>
 				</ul>

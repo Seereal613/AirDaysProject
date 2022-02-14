@@ -42,7 +42,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="listSearch" resultType="com.mask.dto.BoardDTO">
 	<![CDATA[select titlenum,userid,adminid, faqtitle, faqcontent, inquirydate,questiontype from
 	(select /*+INDEX_DESC(tbl_board,pk_board)*/ 
-	rownum rn,titleNum,userID,adminID,faqtitle,faqcontent,inquirydate,questiontype
+	rownum rn,titleNum,userID,adminid,faqtitle,faqcontent,inquirydate,questiontype
 	from faq where 1=1  ]]>
 		<include refid="search" />
 	<![CDATA[ and rownum <= #{page} * #{perPageNum} and titlenum > 0 ) 

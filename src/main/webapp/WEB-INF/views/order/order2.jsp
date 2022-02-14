@@ -106,7 +106,7 @@
 <body Onload="sendData()">
 
 <br>
- <c:forEach items="${list }" var="dto"> 
+
 <%--  	<form action="/ex/order/order2" method="post" name="myHiddenForm" target="iframe1">
 		<input type="hidden" name="state" value="결제완료">
 		<input type="hidden" name="orderNum" value="${dto.orderNum}">
@@ -157,7 +157,7 @@
 	<button onclick="location.href='/ex/order/order3'" id="mypageBtn">MY페이지 주문내역</button>
     <button onclick="location.href='/ex/'">쇼핑계속하기</button>
 </div>
-<</c:forEach> 
+
     <br>
 	<footer>
 		<%-- <%@ include file="./footer.jsp"%> --%>

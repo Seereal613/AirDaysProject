@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.mask.dao.ProductDAO;
 import com.mask.dto.ProductDTO;
+import com.mask.dto.WishlistDTO;
 
 @Service
 public class ProductServiceImpl implements ProductService{
@@ -82,6 +83,14 @@ public class ProductServiceImpl implements ProductService{
 		List<ProductDTO> pdto =dao.listFree();
 		return pdto;
 	}
+
+	@Override
+	public void insertOrder(WishlistDTO wdto) throws Exception {
+		ProductDAO dao=sqlSession.getMapper(ProductDAO.class);
+		dao.insertOrder(wdto);
+	}
+
+
 	
 
 }

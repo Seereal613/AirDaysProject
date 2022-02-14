@@ -80,6 +80,7 @@ public class OrderController {
 	@RequestMapping(value = "/order/order2", method = RequestMethod.GET)
 	public String selectOrder(Model model) throws Exception{
 		model.addAttribute("list", service.selectOrder());
+//		model.addAttribute("dto", service.selectAll());
 		return "/order/order2";
 	}
 	

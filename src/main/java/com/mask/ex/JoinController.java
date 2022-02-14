@@ -34,4 +34,10 @@ public class JoinController {
 		return "/join/post";
 	}
 	
+	@RequestMapping(value = "/join/joinmain", method = RequestMethod.GET)
+	public String link_joinmain(Locale locale, Model model) {
+	
+		return "/join/joinmain";
+	}
+	
 }
