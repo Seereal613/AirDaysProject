@@ -18,17 +18,15 @@
 <meta property="og:image"           content="images/img/kakako.jpg"/>
 <meta property="og:description"     content="airdays"/>
 
-<link rel="stylesheet" type="text/css" href="/ex/resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="/ex/resources/css/reset.css" /> 
 <link rel="stylesheet" type="text/css" href="/ex/resources/css/main.css?ver=1" />
 <link rel="stylesheet" type="text/css" href="/ex/resources/css/content.css" />
 <link rel="stylesheet" type="text/css" href="/ex/resources/css/mainslide.css" />
-<!-- <link rel="stylesheet" type="text/ex/resources/css" href="../ex/resources/css/customer.css" /> -->
-<link rel="stylesheet" type="text/css" href="/ex/resources/css/jquery.fancybox-1.3.4.css" />
+<link rel="stylesheet" type="text/ex/resources/css" href="../ex/resources/css/customer.css" />
+<link rel="stylesheet" type="text/css" href="/ex/resources/css/jquery.fancybox-1.3.4.css" /> 
 <link rel="shortcut icon" href="/ex/resources/images/ico/favicon.ico">
 
-<script type="text/javascript" src="/ex/resources/js/jquery.min.js"></script>
-<script type="text/javascript" src="/ex/resources/js/modernizr.js"></script>
-<script type="text/javascript" src="/ex/resources/js/common.js"></script>
+
 <script type="text/javascript" src="/ex/resources/js/top_navi.js"></script>
 <script type="text/javascript" src="/ex/resources/js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="/ex/resources/js/idangerous.swiper-2.1.min.js"></script>
@@ -189,6 +187,7 @@
 					<!-- <li><a href="#"><span>Logout</span></a></li> -->
 					<li><a href="/ex/join/joinform"><span>회원가입</span></a></li>
 					<li class="last"><a href="/ex/zboard/airtop"><span>장바구니</span></a></li>
+					<li><a href="/ex/sboard/list"><span>FAQ</span></a></li>
 					<li class="searchBtn"><a href="#"><img src="/ex/resources/images/btn/btn_top_search.jpg" alt="검색" /></a></li>
 				</ul>
 			</div>

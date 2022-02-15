@@ -1,3 +1,7 @@
+
+
+
+
 let basket = {
     totalCount: 0, 
     totalPrice: 0,
@@ -12,6 +16,7 @@ let basket = {
     	   document.querySelectorAll("input[name=buy]:checked").forEach(function (item) {
             item.parentElement.parentElement.parentElement.remove();
         });
+    	   
     	   
     	   
         
@@ -51,6 +56,7 @@ let basket = {
 	 	   document.querySelectorAll("input[name=buy]:checked").forEach(function (item) {
 	         item.parentElement.parentElement.parentElement.remove();
 	     });
+	 	   
         
 	 	//AJAX 서버 업데이트 전송
 	        // json 형식으로 데이터 set
@@ -96,8 +102,8 @@ let basket = {
     },
     //화면 업데이트
     updateUI: function () {
-        document.querySelector('#sum_p_num').textContent = '상품갯수: ' + this.totalCount.formatNumber() + '개';
-        document.querySelector('#sum_p_price').textContent = '합계금액: ' + this.totalPrice.formatNumber() + '원';
+        document.querySelector('#sum_p_num').textContent = '상품갯수: ' + this.totalCount.formatNumber('#sum_p_num') + '개';
+        document.querySelector('#sum_p_price').textContent = '합계금액: ' + this.totalPrice.formatNumber('#sum_p_price') + '원';
     },
     //개별 수량 변경
     changePNum: function (pos) {
@@ -112,7 +118,27 @@ let basket = {
 
         var price = item.parentElement.parentElement.previousElementSibling.firstElementChild.getAttribute('value');
         item.parentElement.parentElement.nextElementSibling.textContent = (newval * price).formatNumber()+"원";
+      
+        console.log("pos :", pos);
+        console.log("newval :", newval);
+        
         //AJAX 업데이트 전송
+        $.ajax({
+            url : "/ex/zboard/update",      // 컨트롤러에서 대기중인 URL 주소이다.
+            type: "post",
+            //traditional: true, // ajax 배열 넘기기 옵션!
+            data: { wishlistNum : pos
+            	   ,productCnt : newval
+            	   } , 
+            dataType: "json",
+            success : function(res){ // 비동기통신의 성공일경우 success콜백으로 들어옵니다. 'res'는 응답받은 데이터이다.
+                // 응답코드 > 0000
+                console.log(res);
+            },
+            error : function(XMLHttpRequest, textStatus, errorThrown){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
+                alert("통신 실패.")
+            }
+        });
 
         //전송 처리 결과가 성공이면    
         this.reCalc();

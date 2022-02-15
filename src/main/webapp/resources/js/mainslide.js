@@ -1,4 +1,4 @@
-var index = 0;   //이미지에 접근하는 인덱스
+/*var index = 0;   //이미지에 접근하는 인덱스
 window.onload = function(){
     slideShow();
 }
@@ -17,3 +17,4 @@ x[index-1].style.display = "block";  //해당 인덱스는 block으로
 setTimeout(slideShow, 2500);   //함수를 2.5초마다 호출
 
 }
+*/

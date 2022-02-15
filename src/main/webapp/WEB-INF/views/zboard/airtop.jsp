@@ -18,53 +18,14 @@
 	    	basket.updateUI();			
 	    });
     </script>
-
 </head>
 
 <body>
 <header>
-<%@include file="../include/header.jsp"%>
+	 <%@include file="../include/header.jsp"%>  
 </header>
-   <!--  <div class="container"></div>
-    <header class="header">
-    <div class="wrap">
-    <div class="header_login">
-        <ul>
-            <li><a href="#">회원가입●</a></li>
-            <li><a href="#">로그인●</a></li>
-            <li><a href="#">장바구니●</a></li>
-            <li><a href="#">주문/배송●</a></li>
-            <li><a href="#">고객센터●</a></li>
-        </ul>
-    </div>
-    <div class="header_logoc">
-	    <div class="header_logo">
-	        <a href="#"></a>
-	        <h1>airdays</h1>
-	     </div>
-    </div>
-    <div class="header_util">
-        <div class="header_gnb" class="header_search1">
-            <ul>
-                <li><a href="#">전체상품</a></li>
-                <li><a href="#">신제품</a></li>
-                <li><a href="#">베스트</a></li>
-                <li><a href="#">기획전</a></li>
-                <li><a href="#">KF-94</a></li>
-                <li><a href="#">KF-94 슬림핏</a></li>
-                <li><a href="#">프리스타일</a></li>
-                <li><a href="#">비말차단</a></li>  
-
-                <li><img src="/ex/resources/img/time.PNG" class="click_img"></li>
-				<li>	
-              		<input type="text" name="keyword" id="keywordInput" value="search" />
-                    <button id="searchBtn" class="sear_btn">검색</button>
-                </li>
-            </ul>        
-        </div>
-    </div>
-    </div>
-    </header> -->
+    <div class="container"></div>
+    
     <form name="orderform" id="orderform" method="post" class="orderform"  >
     
         <input type="hidden" name="cmd" value="order">
@@ -110,12 +71,14 @@
                     <div class="basketprice"><input type="hidden" name="p_price" id="p_price${dto.wishlistNum}" class="p_price" value="${dto.productPrice}">${dto.productPrice}원</div>
                     <div class="num">
                         <div class="updown">
-                            <input type="text" name="p_num${dto.wishlistNum}" id="p_num${dto.wishlistNum}" size="3" maxlength="4" class="p_num" value="${dto.productCnt}" onkeyup="javascript:basket.changePNum('${dto.wishlistNum}');">
-                            <span onclick="javascript:basket.changePNum(1);"><i class="fas fa-arrow-alt-circle-up up"></i></span>
-                            <span onclick="javascript:basket.changePNum(1);"><i class="fas fa-arrow-alt-circle-down down"></i></span>
+                        	<span onclick="javascript:basket.changePNum(${dto.wishlistNum});"><i class="fas fa-arrow-alt-circle-up up">+</i></span>
+                            	<input type="text" name="p_num${dto.wishlistNum}" id="p_num${dto.wishlistNum}" size="3" maxlength="4" class="p_num" value="${dto.productCnt}" onkeyup="javascript:basket.changePNum('${dto.wishlistNum}');">
+                            <span onclick="javascript:basket.changePNum(${dto.wishlistNum});"><i class="fas fa-arrow-alt-circle-down down">--</i></span>
                         </div>
                     </div>
                     <div class="sum">${dto.productPrice*dto.productCnt}원</div>
+                    
+                    
                 </div>
                 <div class="subdiv">
                     <div class="basketcmd"><a href="javascript:void(0)" class="abutton" onclick="javascript:basket.delItem();">삭제</a></div>
@@ -125,24 +88,26 @@
     	</div>
       
 		
-		        <div class="right-align basketrowcmd">
+		   	    <div class="right-align basketrowcmd">
 		       		<a href="#" class="abutton" onclick="basket.delCheckedItem();">선택상품삭제</a>
 					<a href="#" class="abutton" onclick="basket.delAllItem();">장바구니비우기</a>
 		        </div>
 		
 	
-        <div class="bigtext right-align sumcount" id="sum_p_num">상품갯수: "${dto.productCnt}"개</div>
-        <div class="bigtext right-align box blue summoney" id="sum_p_price">합계금액: 100,000원</div>
+        <div class="bigtext right-align sumcount" id="sum_p_num${dto.productCnt}">상품갯수: 4개</div>
+        <div class="bigtext right-align box blue summoney" id="sum_p_price${dto.productPrice}">합계금액: 100,000원</div>
 
         <div id="goorder" class="">
             <div class="clear"></div>
             <div class="buttongroup center-align cmd">
-                <a href="/ex/order/order">선택한 상품 주문</a>
+                <a href="/ex/order/order" value="goOrder()">선택한 상품 주문</a>
             </div>
         </div>
+         
+     
     </form>
      <div class="resp_wrap">
-      <div class="container2" class="resp">
+      <div class="container2", class="resp">
              <div class="menu2">
                  <ul class="title">
                      <li><a href="#"><h4>INFORMATION</h4></a></li>
@@ -157,16 +122,16 @@
    </div>
        <div class="footer_a">
            <div class="footer_b">
-               <div class="footer_c"  class="footer_d">
+               <div class="footer_c" , class="footer_d">
                    <ul>
                        <li>
-                       <a href="#"><img src="/ex/resources/img/footer.PNG"></a>
+                       
                        </li>
                    </ul>
                </div>
            </div>
        </div>
-            
+             <%@include file="../include/footer.jsp"%> 
   
 </body>
 </html>

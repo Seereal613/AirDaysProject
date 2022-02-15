@@ -58,7 +58,7 @@ body{position:relative;}
 #sqMenu .sqBox .qmenu:after {content:""; display:block; clear:both;}
 #sqMenu .sqBox .qmenu ul:after {content:""; display:block; clear:both;}
 #sqMenu .sqBox .qmenu ul li {float:left;}
-#sqMenu .sqBox .qmenu ul li a {display:inline-block; font-size:15px; color:rgb(0, 0, 0); font-weight:600; line-height:80px; padding:0 23px;}
+#sqMenu .sqBox .qmenu ul li a {display:inline-block; font-size:15px; color:#fff; font-weight:600; line-height:80px; padding:0 23px;}
 #sqMenu .sqBox .qmenu ul li.esthederm a {color:#8b8b8b;}
 #sqMenu .sqBox .qmenu ul li.abcderm a {color:#414141;}
 #sqMenu .sqBox .openSearch {position:absolute; right:0; top:24px;}
@@ -1064,4 +1064,8 @@ transition-property:transform, left, top; transition-duration:0s; transform:tran
 
 
 
+}
+
+.slide1{
+	width: 1400px;
 }
