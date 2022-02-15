@@ -26,7 +26,7 @@
 <link rel="stylesheet" type="text/css" href="/ex/resources/css/jquery.fancybox-1.3.4.css" />
 <link rel="shortcut icon" href="/ex/resources/images/ico/favicon.ico">
 
-<script type="text/javascript" src="/ex/resources/js/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="/ex/resources/js/jquery.min.js"></script>
 <script type="text/javascript" src="/ex/resources/js/modernizr.js"></script>
 <script type="text/javascript" src="/ex/resources/js/common.js"></script>
 <script type="text/javascript" src="/ex/resources/js/top_navi.js"></script>
@@ -36,7 +36,7 @@
 <script type="text/javascript" src="/ex/resources/js/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="/ex/resources/js/jquery.matchHeight-min.js"></script>
 <script type="text/javascript" src="/ex/resources/js/jquery.fancybox-1.3.4.pack.js"></script>
-<script type="text/javascript" src="/ex/resources/js/mainslide.js"></script>
+<script type="text/javascript" src="/ex/resources/js/mainslide.js"></script> -->
 
 
 <!--[if lt IE 9]>

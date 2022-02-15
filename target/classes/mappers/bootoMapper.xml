@@ -63,7 +63,16 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		  FROM Wishlist W, Product P 
 		 WHERE W.PRODUCTNUM = P.PRODUCTNUM AND W.userID = 'user1'
 	</select>
-
+	
+	<select id="userID" resultType="BootoDto">
+		select * from wishlist where userID="user1"
+	</select>
+	
+	<update id="update" parameterType="java.util.Map">
+		UPDATE wishlist 
+		   SET productCnt= #{productCnt}
+		 WHERE wishlistNum=#{wishlistNum}
+	</update>
 
 </mapper>
 

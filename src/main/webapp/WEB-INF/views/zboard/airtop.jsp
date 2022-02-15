@@ -12,12 +12,14 @@
     <link rel="stylesheet" type="text/css" href="/ex/resources/css/post2.css"/>
     <script type="text/javascript" src="/ex/resources/js/tl.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script type="text/javascript">
 	    $(document).ready(function(){
 	    	basket.reCalc();
 	    	basket.updateUI();			
 	    });
     </script>
+   
 </head>
 
 <body>
@@ -71,9 +73,9 @@
                     <div class="basketprice"><input type="hidden" name="p_price" id="p_price${dto.wishlistNum}" class="p_price" value="${dto.productPrice}">${dto.productPrice}원</div>
                     <div class="num">
                         <div class="updown">
-                        	<span onclick="javascript:basket.changePNum(${dto.wishlistNum});"><i class="fas fa-arrow-alt-circle-up up">+</i></span>
+                        	<span onclick="javascript:basket.changePNum(${dto.wishlistNum});"><i class="fas fa-arrow-alt-circle-up up"></i></span>
                             	<input type="text" name="p_num${dto.wishlistNum}" id="p_num${dto.wishlistNum}" size="3" maxlength="4" class="p_num" value="${dto.productCnt}" onkeyup="javascript:basket.changePNum('${dto.wishlistNum}');">
-                            <span onclick="javascript:basket.changePNum(${dto.wishlistNum});"><i class="fas fa-arrow-alt-circle-down down">--</i></span>
+                            <span onclick="javascript:basket.changePNum(${dto.wishlistNum});"><i class="fas fa-arrow-alt-circle-down down"></i></span>
                         </div>
                     </div>
                     <div class="sum">${dto.productPrice*dto.productCnt}원</div>
@@ -120,18 +122,8 @@
               </div>
         </div>
    </div>
-       <div class="footer_a">
-           <div class="footer_b">
-               <div class="footer_c" , class="footer_d">
-                   <ul>
-                       <li>
-                       
-                       </li>
-                   </ul>
-               </div>
-           </div>
-       </div>
-             <%@include file="../include/footer.jsp"%> 
+     
+          <%@include file="../include/footer.jsp"%> 
   
 </body>
 </html>

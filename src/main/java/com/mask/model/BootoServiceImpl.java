@@ -1,6 +1,7 @@
 package com.mask.model;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,6 +53,15 @@ public class BootoServiceImpl implements BootoService {
 		IBootoDao dao=sqlSession.getMapper(IBootoDao.class);
 		return dao.selectAll();
 	}
+	/**
+	 * 수정
+	 */
+	public void update(Map<String, String> map) throws Exception {
+		IBootoDao dao=sqlSession.getMapper(IBootoDao.class);
+		dao.update(map);
+		
+	}
+	
 	
 	
 

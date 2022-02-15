@@ -14,6 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.mask.model.BootoService;
@@ -46,6 +47,34 @@ public class BootoController {
 	public String headerair() {
 		
 		return "include/headerair";
+	}
+	/**
+	 * 수정
+	 * @param dto
+	 * @return
+	 * @throws Exception
+	 */
+	@ResponseBody
+	@RequestMapping(value = "/zboard/update", method = RequestMethod.POST)
+	public Object update(@RequestParam("wishlistNum") String wishlistNum
+					    ,@RequestParam("productCnt") String productCnt) throws Exception {
+		Map<String, Object> resultMap = new HashMap<String, Object>(); // ajax를 통해 넘어온 배열 데이터 선언
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("wishlistNum", wishlistNum);
+		map.put("productCnt", productCnt);
+		try {
+			
+			if (wishlistNum != null) {
+				service.update(map);
+				resultMap.put("result", "성공");
+			} else {
+				resultMap.put("result", "실패");
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return resultMap;
 	}
 	/**
 	 * 삭제
