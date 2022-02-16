@@ -1,6 +1,7 @@
 package com.mask.dto;
 
 import java.util.Date;
+import java.util.HashMap;
 
 
 public class OrderDto2 {
@@ -10,6 +11,7 @@ public class OrderDto2 {
 	private String address;
 	private int payPrice;
 	private int productCnt;
+	private String productNum;
 	private String productName;
 	private String payMeans;
 	private Date orderDate;
@@ -81,15 +83,23 @@ public class OrderDto2 {
 	public void setState(String state) {
 		this.state = state;
 	}
+	
+	public String getProductNum() {
+		return productNum;
+	}
+	public void setProductNum(String productNum) {
+		this.productNum = productNum;
+	}
 	@Override
 	public String toString() {
 		return "OrderDto2 [orderNum=" + orderNum + ", addressee=" + addressee + ", tel=" + tel + ", address=" + address
-				+ ", payPrice=" + payPrice + ", productCnt=" + productCnt + ", productName=" + productName
-				+ ", payMeans=" + payMeans + ", orderDate=" + orderDate + ", userID=" + userID + ", state=" + state
-				+ "]";
+				+ ", payPrice=" + payPrice + ", productCnt=" + productCnt + ", productNum=" + productNum
+				+ ", productName=" + productName + ", payMeans=" + payMeans + ", orderDate=" + orderDate + ", userID="
+				+ userID + ", state=" + state + "]";
 	}
 	
 	
+	 
 	
 	
 	
