@@ -75,6 +75,7 @@
 					<c:set var="username" value="${orderdto.userName }"/>
 					<c:set var="address" value="${orderdto.address }"/>
 					<c:set var="tel" value="${orderdto.tel }"/>
+					<input type="hidden" name="productNum" value="${orderdto.productNum}">
 					</c:forEach>
 				</table>
 				<div id="recipientInfo">

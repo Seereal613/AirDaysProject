@@ -3,7 +3,7 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.mask.dao.IOrderDao">
+<mapper namespace="com.human.dao.IOrderDao">
 <!-- INSERT -->
 <insert id="insert">
 	insert into mask_order (
@@ -13,6 +13,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		address,
 		payPrice,
 		productCnt,
+		productNum,
 		productName,
 		payMeans,
 		userID,
@@ -24,18 +25,14 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		 #{address},
 		 #{payPrice}, 
 		 #{productCnt},
+		 #{productNum},
 		 #{productName},
 		 #{payMeans},
 		 #{userID},
 		 #{state})
 </insert>
 
-
 <!-- SElECT -->
-<!-- <select id="selectWishlistUserID" resultType="OrderDto">
-select * from wishlist where userID=#{userID}
-</select> -->
-
 <select id="selectAll" resultType="OrderDto2">
 select * from mask_order
 order by orderDate desc
@@ -65,16 +62,15 @@ select * from mask_order where userID=#{userID}
 <select id="selectOrder" resultType="OrderDto2">
 	select * from mask_order
 	where orderNum = ( select max(orderNum)
-    from mask_order)
+    from mask_order) 
 </select>
 
 <select id="selctOrderDetail" resultType="OrderDto3">
-select * from mask_order o,product p 	
-	where  o.productName=p.productName
+	select * from mask_order o,product p 	
+	where  o.productNum=p.productNum
 	and orderNum=#{orderNum}
 	<!-- and w.wishlistNum=#{wishlistNum} -->
 </select>
-
 <!-- UPDATE : address -->
 <update id="update">
 update mask_order set 
